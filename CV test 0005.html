@@ -22,6 +22,9 @@
             h3 {
                 color: brown;
             }
+            h2#viewport {
+                font-size:2vw;
+            }
             p {
                 padding: 10px;
                 margin: 1px;
@@ -32,6 +35,12 @@
             p.error {
                 color: grey;
                 text-align:right;
+            }
+            p.hello {
+                font-size:40px;
+            }
+            p.summary {
+                font-size:1em;
             }
             a:link{
                 color: green;
@@ -105,6 +114,23 @@
                 padding: 1px;
                 color:saddlebrown;
             }
+            img#workmap {
+                width:300px;
+                height:200px;
+            }
+            img#pic {
+                width:auto;
+            }
+            img#icon {
+                width:200px;
+                height:200px;
+                border:0px;
+            }
+            div#unimportantsuccesses {
+                background-color:gray;
+                color:black;
+                padding:20px;
+            }
         </style>
     </head>
     <body>
@@ -112,10 +138,10 @@
             Andrii Shavel
         </h1> 
         <a href="https://www.facebook.com/" target="_blank" title="Go to Facebook">
-            <img src="https://github.com/Andrii2203/CV/blob/master/icon.png?raw=true" alt="icon" style="width:200px;height:200px;border:0px">
+            <img src="https://github.com/Andrii2203/CV/blob/master/icon.png?raw=true" alt="icon" id="icon";>
         </a>
         <br>
-        <p id="demo" style="font-size:40px";>
+        <p id="demo" class="hello";>
             Hello
         </p>
         <button type="button" onclick="tryIt()">
@@ -172,15 +198,15 @@
                 Write me here
             </a>
              or 
-            <a href="#C1" title="Read more">
+            <a href="#C1" title="Read more";>
                 DM me on Facebook
             </a>
         </p>
         <hr>
-        <h2 id="summary">
+        <h2 id="summary";>
             Summary
         </h2> 
-        <p style="font-size:1em;">
+        <p class="summary";>
             I am quick learner, hard – worker, friendly, honest,
             <br> read Forbes magazine (various articles), also read professional literature,
             <br> love to communicate and meet new people, tried to work in different cities,
@@ -306,7 +332,7 @@
         </table>
         <br>
         <hr>
-        <h2 style="font-size:2vw;">
+        <h2 id="viewport";>
             List of the biggest 
             <span class="note highlighted">
                 flaws
@@ -321,8 +347,8 @@
             </li>
         <br>
         <hr>
-        <div style="background-color:gray;color:black;padding:20px;">
-            <h2 style="font-size:2vw;">
+        <div id="unimportantsuccesses";>
+            <h2 id="viewport";>
                 A list of areas that have had significant and unimportant successes 
                 <span class="past">
                     in the past
@@ -349,7 +375,7 @@
         </div>
         <br>
         <hr>
-        <h2 style="font-size:2vw;">
+        <h2 id="viewport";>
             List of areas in which I have failed 
             <span class="past">
                 in the past
@@ -373,7 +399,7 @@
             Read more
         </button>
         <br>
-        <img src="https://github.com/Andrii2203/CV/blob/master/iconset43.png?raw=true" alt="icon" usemap=#workmap style="width:300px;height:200px;">
+        <img src="https://github.com/Andrii2203/CV/blob/master/iconset43.png?raw=true" alt="icon" usemap=#workmap id="workmap";">
         <map name="workmap">
             <area shape="rect" coords="14,20,87,84" alt="facebook" href="https://www.facebook.com/" target="_blank">
             <area shepe="recy" coords="115,20,186,84" alt="game" href="https://www.playstation.com/uk-ua/" target="_blank">
@@ -402,7 +428,7 @@
             <source srcset="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_3.jpg?raw=true" media="(max-width: 1000px)">
             <source srcset="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_1.jpg?raw=true" media="(max-width: 1500px)">
             <source srcset="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_2.jpg?raw=true">
-            <img src="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_4.jpg?raw=true" alt="rain" style="width:auto;">
+            <img src="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_4.jpg?raw=true" alt="rain" id="pic";">
         </picture>
         <script>
             function changeText() {
