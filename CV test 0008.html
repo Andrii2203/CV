@@ -11,11 +11,10 @@
             body {
                 background-color: #f8f8ff;
                 text-align: center;
-                font-family: oswald;            
+                font-family: 'Times New Roman', Times, serif;        
             }  
             h1 {
                 color: #daa520;
-                font-family: 
             }
             h2 {
                 color: #daa520;
@@ -172,8 +171,14 @@
                 padding:10px;
                 margin-top:7px;
             }
-            button {
-                font-family: oswald;
+            .contact {
+                background-color:#e5e5e5;
+                float:right;
+                width:30%;
+                padding:5px;
+                margin-top:7px;
+                text-align:center;
+                border: 1px solid black;
             }
         </style>
     </head>
@@ -184,20 +189,22 @@
             </h1>
         </div>
         <div>
-            <div class="menu">
-                <a href="#">
-                    Link 1
-                </a>        
-                <a href="#">
-                    Link 2
-                </a>
-                <a href="#">
-                    Link 3
-                </a>
-                <a href="#">
-                    Link 4
-                </a>
-            </div>
+            <nav>
+                <div class="menu">
+                    <a href="#">
+                        Link 1
+                    </a>        
+                    <a href="#">
+                        Link 2
+                    </a>
+                    <a href="#">
+                        Link 3
+                    </a>
+                    <a href="#">
+                        Link 4
+                    </a>
+                </div>
+            </nav>
             <div class="main">
                 <h2>
                     MaksEvTrading
@@ -213,15 +220,17 @@
                 </p>
             </div>
             <div class="right">
-                <h2>
-                    Summary
-                </h2>
-                <p>
-                    I am quick learner, hard – worker, friendly, honest,
-                    <br> read Forbes magazine (various articles), also read professional literature,
-                    <br> love to communicate and meet new people, tried to work in different cities,
-                    <br> countries, because it is exciting to learn culture from the inside.
-                </p>
+                <aside>
+                    <h2>
+                        Summary
+                    </h2>
+                    <p>
+                        I am quick learner, hard – worker, friendly, honest,
+                        <br> read Forbes magazine (various articles), also read professional literature,
+                        <br> love to communicate and meet new people, tried to work in different cities,
+                        <br> countries, because it is exciting to learn culture from the inside.
+                    </p>
+                </aside>
             </div>
         </div>
         <div>
@@ -263,30 +272,32 @@
                 </a>
             </li>
         </ul>
-        <table id="contact">
-            <tr>
-                <th colspan="3">
-                    Contact
-                </th>
-            </tr>
-            <tr id="p01">
-                <td>
-                    <p>
-                        Lviv
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        Call: +380991284791
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        shandriy1@gmail.com
-                    </p>
-                </td>
-            </tr>
-        </table>    
+        <nav>
+            <table id="contact">
+                <tr>
+                    <th colspan="3">
+                        Contact
+                    </th>
+                </tr>
+                <tr id="p01">
+                    <td>
+                        <p>
+                            Lviv
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Call: +380991284791
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            shandriy1@gmail.com
+                        </p>
+                    </td>
+                </tr>
+            </table> 
+        </nav>
         <br>
         <p>
             <a href="https://mail.google.com/" target="_blank" title="Go to Gmail">
@@ -298,6 +309,7 @@
             </a>
         </p>
         <hr>
+        <section>
         <h2 id="summary">
             Summary
         </h2> 
@@ -307,6 +319,7 @@
             <br> love to communicate and meet new people, tried to work in different cities,
             <br> countries, because it is exciting to learn culture from the inside.
         </p>
+        </section>
         <hr>
         <table id="highlights">
             <caption>
@@ -427,19 +440,23 @@
         </table>
         <br>
         <hr>
-        <h2 id="successes">
-            List of the biggest 
-            <span class="note highlighted">
-                flaws
-            </span>
-             in terms of personality and professionalism
-        </h2>
+        <article>
+            <header>
+                <h2 id="successes">
+                    List of the biggest 
+                    <span class="note highlighted">
+                        flaws
+                    </span>
+                    in terms of personality and professionalism
+                </h2>
+            </header>
             <li>
                 No European diploma in finance
             </li>
             <li>
                 Absence of fluent spoken, written and readable English
             </li>
+        </article>    
         <br>
         <hr>
         <div id="unimportantsuccesses">
@@ -498,10 +515,17 @@
             </button>
         </div>   
         <br>
-        <br>
+        <footer class="contact">
+            <h3>
+                Contact information!
+            </h3>
+            <p>
+                Lviv |    Call: +380991294791 |     <a href="mailto:shandrij1@gmail.com">shandrij1@gmail.com</a>
+            </p>
+        </footer>
         <picture>
             <source srcset="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_3.jpg?raw=true" media="(max-width: 1000px)">
-            <source srcset="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_1.jpg?raw=true" media="(max-width: 1500px)">
+            <source srcset="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_1.jpg?raw=true" media="(max-width: 1500px)">    
             <source srcset="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_2.jpg?raw=true">
             <img src="https://github.com/Andrii2203/CV/blob/master/wpapers_ru_4.jpg?raw=true" alt="rain" id="pic">
         </picture>
